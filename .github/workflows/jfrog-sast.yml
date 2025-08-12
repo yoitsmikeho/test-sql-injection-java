@@ -56,6 +56,7 @@ jobs:
     - name: Run JFrog SAST
       run: |
         jf audit --sast --sca --secrets --format=sarif > jfrog_sast.sarif
+        jf rt upload jfrog_sast.sarif grafana-plugins-generic-local/sarif-sqli/
 
 
     - name: Upload output to generate autofix
