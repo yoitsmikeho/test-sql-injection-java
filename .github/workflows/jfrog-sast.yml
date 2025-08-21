@@ -47,7 +47,6 @@ jobs:
       id: setup-cli
       env:
         JF_URL: https://${{ vars.JF_URL }}/
-        JFROG_CLI_ANALYZER_MANAGER_VERSION: 1.23.3
       with:
           oidc-provider-name: mikeho-github
           oidc-audience: mikeho-audience
